@@ -20,7 +20,7 @@ Rules:
 
 | # | Date | Hypothesis | Config | Result | Verdict |
 |---|------|-----------|--------|--------|---------|
-| 1 | | Mean reversion exists in 4h returns conditional on z-score | `feasibility.py --lookback 30 --interval 4h` | | |
+| 1 | 2026-09-21 | Mean reversion exists in 4h returns conditional on z-score | `feasibility.py --lookback 30 --interval 4h` | Monotone ladder h=1–16, t=5–17, null control clean | PASS |
 
 ---
 
