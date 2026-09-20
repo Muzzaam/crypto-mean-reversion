@@ -1,0 +1,41 @@
+# ---- data: NEVER commit ----
+# Parquet files are large, binary, and regenerable. Once a big file is in git
+# history it is painful to remove. Everything under data/ is reproducible by
+# running collect.py.
+data/
+*.parquet
+*.csv
+*.feather
+
+# ---- results / scratch ----
+results/
+figures/
+*.png
+*.pdf
+scratch/
+notebooks/*.ipynb
+
+# ---- secrets ----
+# No API keys are needed for public market data, but this is here so that the
+# day you add a private endpoint you do not learn this lesson the hard way.
+.env
+*.key
+secrets*
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# ---- editors / os ----
+.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
